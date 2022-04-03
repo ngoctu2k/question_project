@@ -1,0 +1,14 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.login
+
+block content
+    .login
+    .form
+        form.login-form(method='POST' action='/login')
+            span.material-icons lock
+            input(type='text' placeholder='email' name='username')
+            input(name='password' type='password' placeholder='password' )
+            button(type='submit') login
