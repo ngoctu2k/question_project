@@ -9,6 +9,8 @@ block content
     .form
         form.login-form(method='POST' action='/login')
             span.material-icons lock
+            if errors
+            p.errors= errors
             input(type='text' placeholder='email' name='username')
             input(name='password' type='password' placeholder='password' )
             button(type='submit') login

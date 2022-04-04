@@ -1,5 +1,25 @@
-extends layout
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.index
 
 block content
-  h1= title
-  p Welcome to 1 #{title}
+  audio#audio(autoplay='')
+  source(src='/music/just right.mp3' type='audio/mpeg')
+  .wrapper.flex_box
+    form.index(method='POST' action='/send-question')
+      if successful
+      p.successful= successful
+
+      .input.index
+        label  Name
+        input.index.name(placeholder='your name...?' type='text' name='name' required='')
+      .input.index
+        label  Question
+        textarea.index.comment(placeholder='enter whatever you feel like...' rows='10' name='question' required='')
+      .button_wrapper
+        button submit
+    .cover
+    .sign
+      | ongchukim2k

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 03, 2022 lúc 06:16 PM
+-- Thời gian đã tạo: Th4 04, 2022 lúc 12:31 PM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 7.4.27
 
@@ -29,16 +29,41 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `questions` (
   `name` varchar(255) COLLATE utf8_vietnamese_ci NOT NULL,
-  `question` text COLLATE utf8_vietnamese_ci NOT NULL
+  `question` text COLLATE utf8_vietnamese_ci NOT NULL,
+  `time` text COLLATE utf8_vietnamese_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `questions`
 --
 
-INSERT INTO `questions` (`name`, `question`) VALUES
-('2k', 'anh tu co dep trai khong?'),
-('2k', 'anh tu co dep trai khong?');
+INSERT INTO `questions` (`name`, `question`, `time`) VALUES
+('2k', 'anh tu co dep trai khong?', ''),
+('2k', 'anh tu co dep trai khong?', ''),
+('21212', '1212121', ''),
+('111', '11111', ''),
+('1', '11212121', ''),
+('', '111111', ''),
+('111111', '1111111', ''),
+('mai', 'mai', ''),
+('Trần Thị Mai', 'yêu em không?', ''),
+('Trần Thị Mai', 'yêu em không?', ''),
+('Trần Thị Mai', 'yêu em không?', ''),
+('Trần Thị Mai', 'yêu em không?', ''),
+('TU Tran Ngoc 1 (VTI.P2)', 'alo?', ''),
+('TU Tran Ngoc 1 (VTI.P2)', 'alo?', ''),
+('TU Tran Ngoc 1 (VTI.P2)', 'alo?', ''),
+('TU Tran Ngoc 1 (VTI.P2)', 'alo?', ''),
+('TU Tran Ngoc 1 (VTI.P2)', 'alo?', ''),
+('Trần Thị Mai', 'yêu em không?', ''),
+('mai', '121212121', ''),
+('mai', '121212121', ''),
+('mai', '121212121', ''),
+('TU Tran Ngoc 1 (VTI.P2)', '1212121', ''),
+('TU Tran Ngoc 1 (VTI.P2)121', '1212121', ''),
+('TU Tran Ngoc 1 (VTI.P2)121', '1212121', ''),
+('1', '1111', ''),
+('ong chu kim 2k', '2k2k2k', '4-4-2022 16:21');
 
 -- --------------------------------------------------------
 

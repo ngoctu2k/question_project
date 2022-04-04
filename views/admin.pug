@@ -7,8 +7,8 @@ block content
             th Tên người hỏi
             th Câu hỏi
             th Thời gian hỏi
-        tr
-            td Alfreds Futterkiste
-            td Maria Anders
-            td Germany
-        
+        each val in data
+            tr
+                td= val.name
+                td= val.question
+                td= val.time
