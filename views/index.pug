@@ -5,8 +5,8 @@ html
   body.index
 
 block content
-  audio#audio(autoplay='')
-  source(src='/music/just right.mp3' type='audio/mpeg')
+  audio#audio(autoplay='' loop='')
+    source(src='/music/just right.mp3' type='audio/mp3')
   .wrapper.flex_box
     form.index(method='POST' action='/send-question')
       if successful
